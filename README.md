@@ -1,8 +1,10 @@
 ####Overview####
+
 This project uses a corpus of ragtime pieces, stored as MIDi files, extracts the onset patterns of the melody in each song, 
 and applies the data probabilistically to transform the melody of an input song into a ragtime style.
 
 ####Navigation####
+
 melody_extract is a small program to extract the melody via the skyline algorithm, used in _V1v2Gen.py. Music21 has a built-in
 method for extracting melodies, by simply dividing melody and harmony into separate tracks, but this is a little inconsistent
 with some MIDI files.
