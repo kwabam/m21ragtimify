@@ -30,11 +30,11 @@ for part in scoreEx.parts:
     for item in part.flat:
         if not isinstance(item, m21.note.Rest):
             if isinstance(item, m21.note.Note):
-                partPitches.append(item.ps)
+                partPitches.append(item.pitch.frequency)
             elif isinstance(item, m21.chord.Chord):
                 chordList = []
                 for note in item:
-                    chordList.append(note.pitch.ps)
+                    chordList.append(note.pitch.frequency)
                 partPitches.append(mean(chordList))
     avgPitch = mean(partPitches)
     print(avgPitch)
