@@ -23,13 +23,13 @@ def calculate_syncopation(model, source, parameters=None, outfile=None, barRange
  	elif isinstance(source, Bar):
  		barlist = BarList()
  		barlist.append(source)
- 		print barlist
+ 		print(barlist)
  		sourceType = "single bar"
-	elif isinstance(source, basestring):
+	elif isinstance(source, str):
 		#treat source as a filename
 		sourceType = source
 		if source[-4:]==".mid":
-			import readmidi
+			from . import readmidi
 			midiFile = readmidi.read_midi_file(source)
 			barlist = readmidi.get_bars_from_midi(midiFile)
 
@@ -37,9 +37,9 @@ def calculate_syncopation(model, source, parameters=None, outfile=None, barRange
 			#import rhythm_parser 
 			barlist = read_rhythm(source)
 		else:
-			print "Error in syncopation_barlist_permodel(): Unrecognised file type."
+			print("Error in syncopation_barlist_permodel(): Unrecognised file type.")
 	else:
-		print "Error in syncopation_barlist_permodel(): unrecognised source type."
+		print("Error in syncopation_barlist_permodel(): unrecognised source type.")
 	
 	barsDiscarded=0
 	discardedlist = []
@@ -57,7 +57,7 @@ def calculate_syncopation(model, source, parameters=None, outfile=None, barRange
 
 
 		for bar in barlist[barstart:barend]:
-			print 'processing bar %d' % (barlist.index(bar)+1)
+			print('processing bar %d' % (barlist.index(bar)+1))
 
 			barSyncopation = sync_perbar_permodel(model, bar, parameters)
 			
@@ -76,9 +76,9 @@ def calculate_syncopation(model, source, parameters=None, outfile=None, barRange
 			else:
 				barsDiscarded += 1
 				discardedlist.append(barlist.index(bar))
-				print 'Model could not measure bar %d, returning None.' % (barlist.index(bar)+1)
+				print('Model could not measure bar %d, returning None.' % (barlist.index(bar)+1))
 
-		import WNBD
+		from . import WNBD
 		if model is WNBD:
 			total =  total / numberOfNotes
 		
@@ -106,7 +106,7 @@ def calculate_syncopation(model, source, parameters=None, outfile=None, barRange
  		elif ".json" in outfile:
  			results_to_json(output,outfile)
  		else:
- 			print "Error in syncopation.py: Unrecognised output file type: ", outfile
+ 			print("Error in syncopation.py: Unrecognised output file type: ", outfile)
 
  	return output
 
@@ -117,7 +117,7 @@ def results_to_xml(results, outputFilename):
 
 	elem = Element("syncopation_results")
 
-	for key, val in results.items():
+	for key, val in list(results.items()):
 		child = Element(key)
 		child.text = str(val)
 		elem.append(child)

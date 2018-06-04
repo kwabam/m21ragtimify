@@ -14,8 +14,8 @@ debugflag = 0
 
 def showstr(str, n=16): 
     for x in str[:n]: 
-        print ('%02x' % ord(x)), 
-    print
+        print(('%02x' % ord(x)), end=' ') 
+    print()
      
 def getNumber(str, length): 
     # MIDI uses big-endian for everything 
@@ -65,16 +65,16 @@ class Enumeration:
         uniqueNames = [ ] 
         uniqueValues = [ ] 
         for x in enumList: 
-            if type(x) == types.TupleType: 
+            if type(x) == tuple: 
                 x, i = x 
-            if type(x) != types.StringType: 
-                raise EnumException, "enum name is not a string: " + x 
-            if type(i) != types.IntType: 
-                raise EnumException, "enum value is not an integer: " + i 
+            if type(x) != bytes: 
+                raise EnumException("enum name is not a string: " + x) 
+            if type(i) != int: 
+                raise EnumException("enum value is not an integer: " + i) 
             if x in uniqueNames: 
-                raise EnumException, "enum name is not unique: " + x 
+                raise EnumException("enum name is not unique: " + x) 
             if i in uniqueValues: 
-                raise EnumException, "enum value is not unique for " + x 
+                raise EnumException("enum value is not unique for " + x) 
             uniqueNames.append(x) 
             uniqueValues.append(i) 
             lookup[x] = i 
@@ -84,17 +84,17 @@ class Enumeration:
         self.reverseLookup = reverseLookup 
     def __add__(self, other): 
         lst = [ ] 
-        for k in self.lookup.keys(): 
+        for k in list(self.lookup.keys()): 
             lst.append((k, self.lookup[k])) 
-        for k in other.lookup.keys(): 
+        for k in list(other.lookup.keys()): 
             lst.append((k, other.lookup[k])) 
         return Enumeration(lst) 
     def hasattr(self, attr): 
-        return self.lookup.has_key(attr) 
+        return attr in self.lookup 
     def has_value(self, attr): 
-        return self.reverseLookup.has_key(attr) 
+        return attr in self.reverseLookup 
     def __getattr__(self, attr): 
-        if not self.lookup.has_key(attr): 
+        if attr not in self.lookup: 
             raise AttributeError 
         return self.lookup[attr] 
     def whatis(self, value): 
@@ -199,7 +199,7 @@ class MidiEvent:
             return str[length:] 
         elif x == 0xFF: 
             if not metaEvents.has_value(z): 
-                print "Unknown meta event: FF %02X" % z 
+                print("Unknown meta event: FF %02X" % z) 
                 sys.stdout.flush() 
                 raise "Unknown midi event type" 
             self.type = metaEvents.whatis(z) 
@@ -225,7 +225,7 @@ class MidiEvent:
                  chr(x) + 
                  chr(self.data)) 
             return x 
-        elif sysex_event_dict.has_key(self.type): 
+        elif self.type in sysex_event_dict: 
             str = chr(sysex_event_dict[self.type]) 
             str = str + putVariableLengthNumber(len(self.data)) 
             return str + self.data 
@@ -268,7 +268,7 @@ class MidiChannel:
     def noteOn(self, pitch, time, velocity): 
         self.pitches[pitch] = (time, velocity) 
     def noteOff(self, pitch, time): 
-        if self.pitches.has_key(pitch): 
+        if pitch in self.pitches: 
             keyDownTime, velocity = self.pitches[pitch] 
             register_note(self.track.index, self.index, pitch, velocity, 
                           keyDownTime, time) 
@@ -321,7 +321,7 @@ class MidiTrack:
     def __repr__(self): 
         r = "<MidiTrack %d -- %d events\n" % (self.index, len(self.events)) 
         for e in self.events: 
-            r = r + "    " + `e` + "\n" 
+            r = r + "    " + repr(e) + "\n" 
         return r + "  >" 
 
 
@@ -344,7 +344,7 @@ class MidiFile:
     def __repr__(self): 
         r = "<MidiFile %d tracks\n" % len(self.tracks) 
         for t in self.tracks: 
-            r = r + "  " + `t` + "\n" 
+            r = r + "  " + repr(t) + "\n" 
         return r + ">" 
     def close(self): 
         self.file.close() 
@@ -407,7 +407,7 @@ def main(argv):
     m.read() 
     m.close()
     if printflag: 
-        print m 
+        print(m) 
     else: 
         m.open(outfile, "wb") 
         m.write() 

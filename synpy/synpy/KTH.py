@@ -4,7 +4,7 @@ Institution: Centre for Digital Music, Queen Mary University of London
 
 '''
 
-from basic_functions import get_note_indices, repeat, velocity_sequence_to_min_timespan
+from .basic_functions import get_note_indices, repeat, velocity_sequence_to_min_timespan
 
 # To find the nearest power of 2 equal to or less than the given number
 def round_down_power_2(number):
@@ -14,7 +14,7 @@ def round_down_power_2(number):
 			i = i+1
 		power2 = pow(2,i)
 	else:
-		print 'Error: numbers that are less than 1 cannot be rounded down to its nearest power of two.'
+		print('Error: numbers that are less than 1 cannot be rounded down to its nearest power of two.')
 		power2 = None
 	return power2
 
@@ -45,7 +45,7 @@ def get_syncopation(bar, parameters = None):
 	# KTH only deals with simple-duple meter where the number of beats per bar is a power of two.
 	numerator = bar.get_time_signature().get_numerator()
 	if numerator != round_down_power_2(numerator):
-		print 'Warning: KTH model detects non simple-duple meter so returning None.'
+		print('Warning: KTH model detects non simple-duple meter so returning None.')
 	else:
 		# retrieve note-sequence and next bar's note-sequence
 		noteSequence = bar.get_note_sequence()

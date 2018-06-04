@@ -32,7 +32,7 @@ timeSignatureBase = {
 def add_time_signature(timeSignature, subdivisionSequence, beatLevel):
 	if is_time_signature_valid(timeSignature,subdivisionSequence,beatLevel):
 		if timeSignature in timesigBase:
-			print 'This time-signature is existed already.'
+			print('This time-signature is existed already.')
 		else:
 			timeSignatureBase[timeSignature] = [subdivisionSequence, beatLevel]
 			write_time_signature()
@@ -40,31 +40,31 @@ def add_time_signature(timeSignature, subdivisionSequence, beatLevel):
 def update_time_signature(timeSignature, subdivisionSequence, beatLevel):
 	if is_time_signature_valid(timeSignature,subdivisionSequence,beatLevel):
 		if timeSignature in timeSignatureBase:
-			print 'Original settings for ', timeSignature, ':',timeSignatureBase[timeSignature] 
+			print('Original settings for ', timeSignature, ':',timeSignatureBase[timeSignature]) 
 			timeSignatureBase[timeSignature] = [subdivisionSequence, beatLevel]
-			print 'Changed into:',timeSignatureBase[timeSignature]
+			print('Changed into:',timeSignatureBase[timeSignature])
 			write_time_signature()
 
 def is_time_signature_valid(timeSignature, subdivisionSequence, beatLevel):
 	isValid = False
 	if ('/' not in timeSignature) or (not timeSignature.split('/')[0].isdigit()) or (not timeSignature.split('/')[1].isdigit()):
-		print 'Error: invalid time-signature. Please indicate in the form of fraction, e.g. 4/4, 6/8 or 3/4.'
+		print('Error: invalid time-signature. Please indicate in the form of fraction, e.g. 4/4, 6/8 or 3/4.')
 	elif subdivisionSequence != [s for s in subdivisionSequence if isinstance(s,int)]:
-		print 'Error: invalid subdivision sequence. Please indicate in the form of list of numbers, e.g [1,2,2,2,2].'
+		print('Error: invalid subdivision sequence. Please indicate in the form of list of numbers, e.g [1,2,2,2,2].')
 	elif beatLevel >= len(subdivisionSequence):
-		print 'Error: beat-level exceeds the range of subdivision sequence list.'
+		print('Error: beat-level exceeds the range of subdivision sequence list.')
 	else:
 		isValid = True
 	return isValid
 
 def write_time_signature():
-	import cPickle as pickle
+	import pickle as pickle
 	timeSigFile = open(getScriptPath()+'/TimeSignature.pkl', 'wb')
 	pickle.dump(timeSignatureBase, timeSigFile)
 	timeSigFile.close()
 
 def read_time_signature():
-	import cPickle as pickle
+	import pickle as pickle
 	timeSigFile = open(getScriptPath()+'/TimeSignature.pkl','rb')
 	data = pickle.load(timeSigFile)
 	return data
@@ -72,8 +72,8 @@ def read_time_signature():
 
 def print_time_signature_base():
 	data = read_time_signature()
-	for timeSignature, settings in data.items():
-		print timeSignature, settings
+	for timeSignature, settings in list(data.items()):
+		print(timeSignature, settings)
 
 
 def are_parameters_valid(Lmax, weightSequence, subdivisionSequence):
@@ -88,11 +88,11 @@ def are_parameters_valid(Lmax, weightSequence, subdivisionSequence):
 				if Lmax <= len(weightSequence)-1:
 					isValid = True
 				else:
-					print 'Error: Lmax exceeds the length of weight-sequence. Either reduce Lmax, or provide a new weight-sequence whose length is greater or equal to Lmax.'
+					print('Error: Lmax exceeds the length of weight-sequence. Either reduce Lmax, or provide a new weight-sequence whose length is greater or equal to Lmax.')
 			else:
-				print 'Error: Lmax exceeds the length of subdivision-sequence. Either reduce Lmax, or extend subdivision-sequence through updating time-signature (refer to update_time_signature function).'
+				print('Error: Lmax exceeds the length of subdivision-sequence. Either reduce Lmax, or extend subdivision-sequence through updating time-signature (refer to update_time_signature function).')
 		else:	
-			print 'Error: Lmax needs to be a positive integer.'
+			print('Error: Lmax needs to be a positive integer.')
 		return isValid
 
 	# is_weight_sequence_valid() checks:
@@ -104,9 +104,9 @@ def are_parameters_valid(Lmax, weightSequence, subdivisionSequence):
 			if len(weightSequence) >= Lmax:
 				isValid = True
 			else:
-				print 'Error: the length of weight-sequence needs to be greater or equal to Lmax.'
+				print('Error: the length of weight-sequence needs to be greater or equal to Lmax.')
 		else:
-			print 'Error: the weight-sequence needs to be a list of integers.'
+			print('Error: the weight-sequence needs to be a list of integers.')
 		return isValid
 
 

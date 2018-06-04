@@ -4,8 +4,8 @@ Institution: Centre for Digital Music, Queen Mary University of London
 
 '''
 
-from basic_functions import get_H, velocity_sequence_to_min_timespan, get_rhythm_category, upsample_velocity_sequence,  find_rhythm_Lmax
-from parameter_setter import are_parameters_valid
+from .basic_functions import get_H, velocity_sequence_to_min_timespan, get_rhythm_category, upsample_velocity_sequence,  find_rhythm_Lmax
+from .parameter_setter import are_parameters_valid
 
 def get_syncopation(bar, parameters = None):
 	syncopation = None
@@ -13,15 +13,15 @@ def get_syncopation(bar, parameters = None):
 	subdivisionSequence = bar.get_subdivision_sequence()
 
 	if get_rhythm_category(velocitySequence, subdivisionSequence) == 'poly':
-		print 'Warning: SG model detects polyrhythms so returning None.'
+		print('Warning: SG model detects polyrhythms so returning None.')
 	elif bar.is_empty():
-		print 'Warning: SG model detects empty bar so returning None.'
+		print('Warning: SG model detects empty bar so returning None.')
 	else:
 		velocitySequence = velocity_sequence_to_min_timespan(velocitySequence)	# converting to the minimum time-span format
 
 		# set the defaults
 		Lmax  = 10
-		weightSequence = range(Lmax+1) # i.e. [0,1,2,3,4,5]
+		weightSequence = list(range(Lmax+1)) # i.e. [0,1,2,3,4,5]
 		if parameters!= None:
 			if 'Lmax' in parameters:
 				Lmax = parameters['Lmax']				
@@ -29,7 +29,7 @@ def get_syncopation(bar, parameters = None):
 				weightSequence = parameters['W']
 
 		if not are_parameters_valid(Lmax, weightSequence, subdivisionSequence):
-			print 'Error: the given parameters are not valid.'
+			print('Error: the given parameters are not valid.')
 		else:
 			Lmax = find_rhythm_Lmax(velocitySequence, Lmax, weightSequence, subdivisionSequence) 
 			if Lmax != None:
@@ -91,5 +91,5 @@ def get_syncopation(bar, parameters = None):
 							level = h 		# Metrical weight is equal to its metrical level
 							syncopation += min(ave_dif_neighbours(index, level))*potential
 				else:
-					print 'Try giving a bigger Lmax so that the rhythm sequence can be measured by the matching metrical weights sequence (H).'
+					print('Try giving a bigger Lmax so that the rhythm sequence can be measured by the matching metrical weights sequence (H).')
 	return syncopation

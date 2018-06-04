@@ -1,249 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="579ea9ce-ac19-47ff-b67e-8e9d2c5fde98" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/synpy/.hg_archival.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Raw_rating_data/Ratings for entire stimuli.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ab.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/abab.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ac.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ad.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/adad.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/af.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ag.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ah.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/aj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ak.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/al.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ba.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/baba.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bbbb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bcbc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bdbd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/bl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ca.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cbcb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cdcd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ck.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/cl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/da.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dada.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/db.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dbdb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dcdc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dddd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/df.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/dl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fa.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ff.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/fl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ga.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/gl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ha.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/hl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ja.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/jl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ka.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kd.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/kl.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/la.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lb.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lc.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ld.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lf.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lg.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lj.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/lk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_audio/ll.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ab.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/abab.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ac.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ad.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/adad.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/af.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ag.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ah.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/aj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ak.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/al.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ba.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/baba.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bbbb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bcbc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bdbd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/bl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ca.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cbcb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cdcd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ch.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ck.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/cl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/da.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dada.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/db.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dbdb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dcdc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dddd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/df.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/dl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fa.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ff.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/fl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ga.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/gl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ha.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/hl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ja.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/jl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ka.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kd.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/kl.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/la.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lb.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lc.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ld.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lf.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lg.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lh.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lj.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/lk.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/Rhythm_stimuli_text_format/ll.rhy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/KTH.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/LHL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/PRS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/SG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/TMC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/TOB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/TimeSignature.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/WNBD.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/basic_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/midiparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/music_objects.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/parameter_setter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/readmidi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/rhythm_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synpy/synpy/syncopation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melody_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/melody_extract.py" afterDir="false" />
-    </list>
+    <list default="true" id="579ea9ce-ac19-47ff-b67e-8e9d2c5fde98" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -277,8 +35,8 @@
       <file leaf-file-name="KTH.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/synpy/synpy/KTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -357,7 +115,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="210" />
     <option name="y" value="15" />
     <option name="width" value="1400" />
@@ -374,17 +132,6 @@
             <path>
               <item name="m21ragtimify" type="b2602c69:ProjectViewProjectNode" />
               <item name="m21ragtimify" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m21ragtimify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="m21ragtimify" type="462c0819:PsiDirectoryNode" />
-              <item name="synpy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m21ragtimify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="m21ragtimify" type="462c0819:PsiDirectoryNode" />
-              <item name="synpy" type="462c0819:PsiDirectoryNode" />
-              <item name="synpy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -458,14 +205,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32968536" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
@@ -638,10 +386,20 @@
     <entry file="file://$PROJECT_DIR$/synpy/synpy/2to3.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Tools/scripts/2to3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#22#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/synpy/synpy/KTH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -3,8 +3,8 @@ Author: Chunyang Song
 Institution: Centre for Digital Music, Queen Mary University of London
 '''
 
-from basic_functions import concatenate, repeat, subdivide, ceiling, get_rhythm_category
-from parameter_setter import are_parameters_valid
+from .basic_functions import concatenate, repeat, subdivide, ceiling, get_rhythm_category
+from .parameter_setter import are_parameters_valid
 
 
 
@@ -27,7 +27,7 @@ def recursive_tree(binarySequence, subdivisionSequence, weightSequence, metrical
 		output.append(Node('R',metricalWeight))
 
 	elif level+1 == Lmax:
-		print "WARNING: LHL tree recursion descended to Lmax, returning a note node but result will not be fully accurate.  Check the rhythm pattern under test and/or specify larger Lmax to rectify the problem."
+		print("WARNING: LHL tree recursion descended to Lmax, returning a note node but result will not be fully accurate.  Check the rhythm pattern under test and/or specify larger Lmax to rectify the problem.")
 		output.append(Node('N',metricalWeight))
 
 	# Keep subdividing by the subdivisor of the next level
@@ -48,14 +48,14 @@ def get_syncopation(bar, parameters = None):
 
 	# LHL can only measure monorhythms
 	if get_rhythm_category(binarySequence, subdivisionSequence) == 'poly':
-		print 'Warning: LHL model detects polyrhythms so returning None.'
+		print('Warning: LHL model detects polyrhythms so returning None.')
 	elif bar.is_empty():
-		print 'LHL model detects empty bar so returning -1.'
+		print('LHL model detects empty bar so returning -1.')
 		syncopation = -1
 	else:
 		# set defaults
 		Lmax = 10
-		weightSequence = range(0,-Lmax-1,-1)
+		weightSequence = list(range(0,-Lmax-1,-1))
 		# if parameters are specified by users, check their validities and update parameters if valid		
 		if parameters!= None:
 			if 'Lmax' in parameters:
@@ -64,7 +64,7 @@ def get_syncopation(bar, parameters = None):
 				weightSequence = parameters['W']
 
 		if not are_parameters_valid(Lmax, weightSequence, subdivisionSequence):
-			print 'Error: the given parameters are not valid.'
+			print('Error: the given parameters are not valid.')
 		else:
 			
 			# For the rhythm in the current bar, process its tree structure and store the terminal nodes 

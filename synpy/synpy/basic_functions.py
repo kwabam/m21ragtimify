@@ -21,7 +21,7 @@ def repeat(seq,times):
 def subdivide(seq,divisor):
 	subSeq = []
 	if len(seq) % divisor != 0:
-		print 'Error: rhythmic sequence cannot be equally subdivided.'
+		print('Error: rhythmic sequence cannot be equally subdivided.')
 	else:
 		n = len(seq) / divisor
 		start , end = 0, n
@@ -83,9 +83,9 @@ def is_prime(number):
 def upsample_velocity_sequence(velocitySequence, length):
 	upsampledVelocitySequence = None
 	if length < len(velocitySequence):
-		print 'Error: the requested upsampling length needs to be longer than velocity sequence.'
+		print('Error: the requested upsampling length needs to be longer than velocity sequence.')
 	elif length % len(velocitySequence) != 0:
-		print 'Error: velocity sequence can only be upsampled to a interger times of its own length.'
+		print('Error: velocity sequence can only be upsampled to a interger times of its own length.')
 	else:
 		upsampledVelocitySequence = [0]*length
 		scalingFactor = length/len(velocitySequence)
@@ -96,7 +96,7 @@ def upsample_velocity_sequence(velocitySequence, length):
 
 # convert a velocity sequence to its minimum time-span representation
 def velocity_sequence_to_min_timespan(velocitySequence):
-	from music_objects import VelocitySequence
+	from .music_objects import VelocitySequence
 	minTimeSpanVelocitySeq = [1]
 	for divisors in find_divisor(len(velocitySequence)):
 		segments = subdivide(velocitySequence,divisors)
@@ -159,7 +159,7 @@ def get_H(weightSequence,subdivisionSequence, level):
 			for h in H_pre:
 				H = concatenate(H, concatenate([h], repeat([weightSequence[level]],subdivisionSequence[level]-1)))
 	else:
-		print 'Error: a subdivision factor or metrical weight is not defined for the request metrical level.'
+		print('Error: a subdivision factor or metrical weight is not defined for the request metrical level.')
 	return H
 
 
@@ -183,7 +183,7 @@ def get_rhythm_category(velocitySequence, subdivisionSequence):
 
 
 def string_to_sequence(inputString,typeFunction=float):
-	return map(typeFunction, inputString.split(','))
+	return list(map(typeFunction, inputString.split(',')))
 
 # find the metrical level L that contains the same number of metrical positions as the length of the binary sequence
 # if the given Lmax is not big enough to analyse the given sequence, request a bigger Lmax
@@ -204,7 +204,7 @@ def find_rhythm_Lmax(rhythmSequence, Lmax, weightSequence, subdivisionSequence):
 
 	# if need a bigger Lmax, print error message and return None; otherwise return the matching metrical level L
 	if needBiggerLmax:
-		print 'Error: needs a bigger L_max (i.e. the lowest metrical level) to match the given rhythm sequence.'
+		print('Error: needs a bigger L_max (i.e. the lowest metrical level) to match the given rhythm sequence.')
 		L = None
 	
 	return L

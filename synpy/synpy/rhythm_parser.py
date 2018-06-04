@@ -62,7 +62,7 @@ def read_rhythm(fileName):
 				if fieldname.lower()=="t":
 					timeSignature = TimeSignature(value)
 				else:
-					print 'Error, first field in the file should set the time signature.'
+					print('Error, first field in the file should set the time signature.')
 
 		# parse the line
 		(newbarlist, tempo, timeSignature, ticksPerQuarter) = parse_line(line, timeSignature,  tempo, ticksPerQuarter)
@@ -117,7 +117,7 @@ def parse_line(line,  timeSignature=None, tempo=None, ticksPerQuarter=None):
 				tempo = int(value)
 			
 			else:
-				print 'Unrecognised field type: "' + fieldname + '"'
+				print('Unrecognised field type: "' + fieldname + '"')
 	
 	return bars, tempo, timeSignature, ticksPerQuarter
 
@@ -135,7 +135,7 @@ def get_next_field(line):
 		line = line[index+1:]
 		field = fieldtext.split("{")
 	else:
-		print 'Error, incorrect syntax: "'+line+'"'
+		print('Error, incorrect syntax: "'+line+'"')
 		raise RhythmSyntaxError(line)
 
 	return field,line

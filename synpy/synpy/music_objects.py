@@ -1,7 +1,7 @@
 
-from basic_functions import ceiling, string_to_sequence, calculate_bar_ticks, velocity_sequence_to_min_timespan
-import parameter_setter 
-import rhythm_parser 
+from .basic_functions import ceiling, string_to_sequence, calculate_bar_ticks, velocity_sequence_to_min_timespan
+from . import parameter_setter 
+from . import rhythm_parser 
 
 class Note():
 	def __init__(self, firstarg = None, duration = None, velocity = None):
@@ -10,7 +10,7 @@ class Note():
 		self.velocity = 0
 
 		if firstarg != None:
-			if isinstance(firstarg,basestring):
+			if isinstance(firstarg,str):
 				intlist = string_to_sequence(firstarg,int)
 				self.startTime = intlist[0]
 				self.duration = intlist[1]
@@ -59,7 +59,7 @@ class NormalisedVelocityValueOutOfRange(Exception):
 class VelocitySequence(list):
 	def __init__(self, velocitySequence = None):
 		if velocitySequence != None:
-			if isinstance(velocitySequence,basestring):
+			if isinstance(velocitySequence,str):
 				self.string_to_velocity_sequence(velocitySequence)
 			elif isinstance(velocitySequence, list):
 				self+=velocitySequence
@@ -177,7 +177,7 @@ class Bar:
 			self.velocitySequence = rhythmSequence
 			self.noteSequence = None 
 
-		if isinstance(timeSignature, basestring):
+		if isinstance(timeSignature, str):
 			self.timeSignature = TimeSignature(timeSignature)
 		else:
 			self.timeSignature = timeSignature
@@ -265,7 +265,7 @@ class TimeSignature():
 		if inputString in parameter_setter.read_time_signature():
 			self.tsString = inputString
 		else:
-			print "Error: undefined time-signature: ", inputString
+			print("Error: undefined time-signature: ", inputString)
 			raise NullTimeSignatureError
 
 	def get_subdivision_sequence(self):

@@ -343,7 +343,7 @@ def midi_event_to_time_signature(midiTimeSignatureEvent):
 	only for sequencer metronome settings which we won't use here.
 	"""
 	if midiTimeSignatureEvent.type!="TIME_SIGNATURE":
-		print "Error in midi_event_to_time_signature(),  event must be a midi time signature type"
+		print("Error in midi_event_to_time_signature(),  event must be a midi time signature type")
 		return None
 	else:
 		num = ord(midiTimeSignatureEvent.data[0])
@@ -356,12 +356,12 @@ def midi_event_to_qpm_tempo(midiTempoEvent):
 	Extract the tempo in QPM from a midi SET_TEMPO event
 	"""
 	if midiTempoEvent.type!="SET_TEMPO":
-		print "Error in midi_event_to_qpm_tempo(),  event must be a midi tempo event"
+		print("Error in midi_event_to_qpm_tempo(),  event must be a midi tempo event")
 		return None
 	else:
 		# tempo is stored as microseconds per quarter note
 		# in three bytes which we can extract as three ints:
-		values = map(ord, midiTempoEvent.data)
+		values = list(map(ord, midiTempoEvent.data))
 		# first byte multiplied by 2^16, second 2^8 and third is normal units
 		# giving microseconds per quarter
 		microsecondsPerQuarter = values[0]*2**16 + values[1]*2**8 + values[2]

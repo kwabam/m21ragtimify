@@ -3,7 +3,7 @@ Author: Chunyang Song
 Institution: Centre for Digital Music, Queen Mary University of London
 '''
 
-from basic_functions import repeat, subdivide, ceiling, velocity_sequence_to_min_timespan, get_rhythm_category
+from .basic_functions import repeat, subdivide, ceiling, velocity_sequence_to_min_timespan, get_rhythm_category
 
 def get_cost(sequence,nextSequence):
 	sequence = velocity_sequence_to_min_timespan(sequence)					# converting to the minimum time-span format
@@ -43,9 +43,9 @@ def get_syncopation(bar, parameters = None):
 
 	# PRS does not handle polyrhythms
 	if get_rhythm_category(binarySequence, subdivisionSequence) == 'poly':
-		print 'Warning: PRS model detects polyrhythms so returning None.'
+		print('Warning: PRS model detects polyrhythms so returning None.')
 	elif bar.is_empty():
-		print 'Warning: PRS model detects empty bar so returning None.'
+		print('Warning: PRS model detects empty bar so returning None.')
 	else:
 		syncopation = 0
 
