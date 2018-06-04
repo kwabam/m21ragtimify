@@ -1,5 +1,6 @@
 import music21 as m21
 from statistics import mean
+import TMC
 
 #localCorpus = m21.corpus.corpora.LocalCorpus()
 #localCorpus.removePath("~/Documents/Research/2017-2018/RAGcorpus/")
