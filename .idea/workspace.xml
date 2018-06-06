@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="579ea9ce-ac19-47ff-b67e-8e9d2c5fde98" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/PRS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melody_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/melody_extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synpy/synpy/2to3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synpy/synpy/TMC.py" beforeDir="false" afterPath="$PROJECT_DIR$/synpy/synpy/TMC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synpy/synpy/midiparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/synpy/synpy/midiparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synpy/synpy/readmidi.py" beforeDir="false" afterPath="$PROJECT_DIR$/synpy/synpy/readmidi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,14 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="melody_extract.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="melody_extract.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/melody_extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="306">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PRS.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PRS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -59,7 +64,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../Synpy/synpy/TMC.py" />
-        <option value="$PROJECT_DIR$/TMC.py" />
         <option value="$PROJECT_DIR$/paramater_setter.py" />
         <option value="$PROJECT_DIR$/basic_functions.py" />
         <option value="$PROJECT_DIR$/synpy/synpy/syncopation.py" />
@@ -72,6 +76,8 @@
         <option value="$PROJECT_DIR$/synpy/synpy/midiparser.py" />
         <option value="$PROJECT_DIR$/synpy/synpy/basic_functions.py" />
         <option value="$PROJECT_DIR$/melody_extract.py" />
+        <option value="$PROJECT_DIR$/TMC.py" />
+        <option value="$PROJECT_DIR$/PRS.py" />
       </list>
     </option>
   </component>
@@ -206,9 +212,9 @@
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32968536" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32968536" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32968536" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -357,7 +363,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic_functions.py" />
-    <entry file="file://$PROJECT_DIR$/TMC.py" />
     <entry file="file://$PROJECT_DIR$/paramater_setter.py" />
     <entry file="file://$PROJECT_DIR$/synpy/synpy/SG.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -456,11 +461,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/melody_extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="306">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
         </state>
       </provider>
     </entry>
