@@ -1,5 +1,6 @@
 import music21 as m21
 from statistics import mean
+import PRS
 
 #localCorpus = m21.corpus.corpora.LocalCorpus()
 #localCorpus.removePath("~/Documents/Research/2017-2018/RAGcorpus/")
@@ -10,6 +11,10 @@ from statistics import mean
 #    print("Local corpus is good to go.\n")
 #else:
 #    print("Local corpus not initialized")
+
+measure = "1"*16
+print(measure)
+print(PRS.getSyncopationLevel(measure))
 
 filename = input("Enter the MIDI filename: ")
 
