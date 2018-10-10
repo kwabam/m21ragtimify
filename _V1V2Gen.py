@@ -24,7 +24,7 @@ def melodyExtract(scoreEx):
     #take the track with the highest average pitch as the melody
     
     highestPitches = []
-    highestMean = 0    
+    highestMean = 0
 
     for part in scoreEx.parts:
         for thing in part:
@@ -96,11 +96,12 @@ def main():
     
     
     
-### PART 2 
-### apply the frequency data probabilistically
+    ### PART 2
+    ### apply the frequency data probabilistically
     # stores the info for how frequently a measure appears
     
-    # computing the frequencies of the data
+    # / computing the frequencie
+    # s of the data
     for i in range(17):
         for key, value in v1PatternData[i].items():
             v1PatternData[i][key] = v1PatternData[i][key]/onsetTotalV1[i]
@@ -109,7 +110,7 @@ def main():
         for key, value in v2PatternData[i].items():
             v2PatternData[i][key] = v2PatternData[i][key]/onsetTotalV2[i]
         
-    os.chdir('/Users/zaid/Documents/Research/2017-2018/m21proj/xm')
+    os.chdir('/Users/kw169/Documents/Research/2017-2018/m21proj/xm')
     fileName = input("Enter the melody filename: ")
     
     inputStream = m21.converter.parse(fileName)
@@ -172,6 +173,9 @@ def main():
         measureNum+=1
         # outputStreamV2.append(newMeasure)
 
-    outputStreamV1.write("midi", fp="/Users/zaid/Documents/Research/2017-2018/m21proj/"+fileName+"Rag.midi")
-        
-main()
+    outputStreamV1.write("midi", fp="/Users/kw169/Desktop/"+fileName+"Rag.midi")
+
+
+if __name__ == "__main__":
+    print("V1V2Gen")
+    main()

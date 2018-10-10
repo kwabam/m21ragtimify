@@ -16,15 +16,15 @@ import collections
 #else:
 #    print("Local corpus not initialized")
 
-def convertToOnsetList(measure):
-    measureAsOnsetList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+def convertToOnsetString(measure):
+    measure_as_onset_list = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
     for item in measure.flat:
         if isinstance(item, m21.note.Note) or isinstance(item, m21.chord.Chord):
-            index = round((item.beat - 1) * 4)
+            index = round((item.offset) * 4)
             if index > 15:
                 index = 15
-            measureAsOnsetList[index] = '1'
-    return "".join(measureAsOnsetList)
+            measure_as_onset_list[index] = '1'
+    return "".join(measure_as_onset_list)
 
 def pitchAnalysis(part):
     partPitches = []
@@ -40,66 +40,67 @@ def pitchAnalysis(part):
     avgPitch = mean(partPitches)
     return avgPitch, partPitches
 
-local = m21.corpus.corpora.LocalCorpus()
-paths = local.getPaths()
-alphaLevel = .00005
-# with open('syncopationData.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
-#     x, y = pickle.load(f)
-# print(len(x))
-# sort = sorted(x)
-# set = list(set(sort))
-# counter = collections.Counter(sort)
-# print(sorted(counter.keys()))
-# print(counter)
-#
-# plt.scatter(x,y, alphaLevel)
-# plt.xlabel('syncopation of measure x')
-# plt.ylabel('syncopation of measure x + 1')
-#
-# plt.savefig('graph.png')
-# exit(1)
+if __name__ == "__main__":
+    local = m21.corpus.corpora.LocalCorpus()
+    paths = local.getPaths()
+    alpha_level = .00005
+    # with open('syncopationData.pkl', 'rb') as f:  # Python 3: open(..., 'rb')
+    #     x, y = pickle.load(f)
+    # print(len(x))
+    # sort = sorted(x)
+    # set = list(set(sort))
+    # counter = collections.Counter(sort)
+    # print(sorted(counter.keys()))
+    # print(counter)
+    #
+    # plt.scatter(x,y, alphaLevel)
+    # plt.xlabel('syncopation of measure x')
+    # plt.ylabel('syncopation of measure x + 1')
+    #
+    # plt.savefig('graph.png')
+    # exit(1)
 
-# filename = "Amazin' Mess, An - Radna"#input("Enter the MIDI filename: ")
-# scoreEx = m21.corpus.parse(filename)
-# print("Loading the piece before melody has been extracted... ")
-x = []
-y = []
+    # filename = "Amazin' Mess, An - Radna"#input("Enter the MIDI filename: ")
+    # scoreEx = m21.corpus.parse(filename)
+    # print("Loading the piece before melody has been extracted... ")
+    x = []
+    y = []
 
-for i, file in enumerate(paths):
-    scoreEx = m21.converter.parse(file)
-    ## SKYLINE ALGORITHM ##
-    #take the track with the highest average pitch as the melody"
-    highestPitches = []
-    highestMean = 0
-    count = 0
-    melodyPart = scoreEx.parts[0]
-    for part in scoreEx.parts:
-        analysisInfo = pitchAnalysis(part) #returns tuple where first element is avgPitch, 2nd is partPitches
-        if analysisInfo[0] > highestMean:
-            highestMean = analysisInfo[0]
-            highestPitches = analysisInfo[1]
-            melodyPart = part
-    ## SYNCOPATION ANALYSIS ##
-    #analyse the level of syncopation within each measure of the melody part#
-    binaryMeasures = []
-    syncopationSet = []
-    for measure in melodyPart.makeMeasures():
-        if m21.meter.bestTimeSignature(measure).ratioString == '4/4':
-            measureStr = convertToOnsetList(measure)
-            binaryMeasures.append(measureStr)
-            syncopationSet.append(PRS.getSyncopationLevel(measureStr))
-            #Graphing
-            x.extend(syncopationSet[0:-1])
-            y.extend(syncopationSet[1:])
-    print(i, "i")
-    if i%50 == 0: #every 50 pieces, copy data down
-        with open('syncopationDataRounded.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
-            pickle.dump([x, y], f)
+    for i, file in enumerate(paths):
+        score_ex = m21.converter.parse(file)
+        ## SKYLINE ALGORITHM ##
+        #take the track with the highest average pitch as the melody"
+        highest_pitches = []
+        highest_mean = 0
+        count = 0
+        melody_part = score_ex.parts[0]
+        for part in score_ex.parts:
+            analysis_info = pitchAnalysis(part) #returns tuple where first element is avgPitch, 2nd is partPitches
+            if analysis_info[0] > highest_mean:
+                highest_mean = analysis_info[0]
+                highest_pitches = analysis_info[1]
+                melody_part = part
+        ## SYNCOPATION ANALYSIS ##
+        #analyse the level of syncopation within each measure of the melody part#
+        binary_measures = []
+        syncopation_set = []
+        for measure in melody_part.makeMeasures():
+            #if m21.meter.bestTimeSignature(measure).ratioString == '4/4':
+                measure_str = convertToOnsetString(measure)
+                binary_measures.append(measure_str)
+                syncopation_set.append(PRS.getSyncopationLevel(measure_str))
+                #Graphing
+                x.extend(syncopation_set[0:-1])
+                y.extend(syncopation_set[1:])
+        print(i, "i")
+        if i%50 == 0: #every 50 pieces, copy data down
+            with open('syncopationDataRounded.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+                pickle.dump([x, y], f)
 
-plt.scatter(x,y, alphaLevel)
-plt.xlabel('syncopation of measure x')
-plt.ylabel('syncopation of measure x + 1')
-plt.show()
+    plt.scatter(x, y, alpha_level)
+    plt.xlabel('syncopation of measure x')
+    plt.ylabel('syncopation of measure x + 1')
+    plt.show()
 
-with open('test.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
-    pickle.dump([x,y], f)
+    with open('test.pkl', 'wb') as f:  # Python 3: open(..., 'wb')
+        pickle.dump([x,y], f)
