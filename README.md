@@ -16,3 +16,4 @@ _V1v2Gen.py is the heart of the program. It uses the frequency data from the dat
 probabilitistically to a midi file input. Effectively, this shifts the melody note onset data from the input to sound more 
 like a ragtime piece.
 
+PRS.py implements Pressing's cognitive cost algorithm. This algorithm helps to estimate levels of syncopation within a measure.
