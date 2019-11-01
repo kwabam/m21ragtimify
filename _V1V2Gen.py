@@ -9,6 +9,7 @@ import music21 as m21
 import json
 import os
 import random
+import melody_extract as mx
 from statistics import mean
 
 def countOnsets(measureStr):
@@ -18,35 +19,40 @@ def countOnsets(measureStr):
             count += 1
     return count
 
-def melodyExtract(scoreEx):
-    
+def melodyExtract(score_ex):
     ## SKYLINE ALGORITHM ##
     #take the track with the highest average pitch as the melody
-    
-    highestPitches = []
-    highestMean = 0
+    melody_part = []
+    highest_pitches = []
+    highest_mean = 0
 
-    for part in scoreEx.parts:
-        for thing in part:
-            if 'Voice' in thing.classSet:
-                print(thing)
-                voicePitches = []
-                for item in thing:
-                    print(item)
-                    if 'Chord' in item.classSet:
-                        chordList = []
-                        for note in item:
-
-                            voicePitches.append(note.pitch.midi)
-                    elif 'Note' in item.classSet:
-                        voicePitches.append(item.pitch.midi)        
-                avgPitch = mean(voicePitches)
-                if avgPitch > highestMean:
-                    highestMean = avgPitch
-                    melodyPart = thing
-            
-    print("this was selected", melodyPart)
-    return melodyPart
+    # for part in scoreEx.parts:
+    #     for thing in part:
+    #         if 'Voice' in thing.classSet:
+    #             print(thing)
+    #             voicePitches = []
+    #             for item in thing:
+    #                 print(item)
+    #                 if 'Chord' in item.classSet:
+    #                     chordList = []
+    #                     for note in item:
+    #
+    #                         voicePitches.append(note.pitch.midi)
+    #                 elif 'Note' in item.classSet:
+    #                     voicePitches.append(item.pitch.midi)
+    #             avgPitch = mean(voicePitches)
+    #             if avgPitch > highestMean:
+    #                 highestMean = avgPitch
+    #                 melodyPart = thing
+    #
+    # print("this was selected", melodyPart)
+    for part in score_ex.parts:
+        analysis_info = mx.pitchAnalysis(part)  # returns tuple where first element is avgPitch, 2nd is partPitches
+        if analysis_info[0] > highest_mean:
+            highest_mean = analysis_info[0]
+            highest_pitches = analysis_info[1]
+            melody_part = part
+    return melody_part
 
 # rework this method of choosing probabilistically
 def selectProb(dct):
@@ -85,17 +91,18 @@ def main():
         onsetTotalV1[position] = count
         position+=1
 
-    position = 0
-    for element in v2PatternData:
-        count = 0
-        for key in element:
-            count+=1
-            
-        onsetTotalV2[position] = count
-        position+=1
+    # position = 0
+    # for element in v2PatternData:
+    #     count = 0
+    #     for key in element:
+    #         count+=1
+    #
+    #     onsetTotalV2[position] = count
+    #     position+=1
     
-    
-    
+
+    print(onsetTotalV1)
+    # print(onsetTotalV2)
     ### PART 2
     ### apply the frequency data probabilistically
     # stores the info for how frequently a measure appears
@@ -106,16 +113,18 @@ def main():
         for key, value in v1PatternData[i].items():
             v1PatternData[i][key] = v1PatternData[i][key]/onsetTotalV1[i]
         
-    for i in range(33):
-        for key, value in v2PatternData[i].items():
-            v2PatternData[i][key] = v2PatternData[i][key]/onsetTotalV2[i]
+    # for i in range(33):
+    #     for key, value in v2PatternData[i].items():
+    #         v2PatternData[i][key] = v2PatternData[i][key]/onsetTotalV2[i]
         
-    os.chdir('/Users/kw169/Documents/Research/2017-2018/m21proj/xm')
-    fileName = input("Enter the melody filename: ")
-    
+    os.chdir('/Users/kw169/Desktop/RAG Project/input')
+    #fileName = input("Enter the melody filename: ")
+    fileName = 'canon.mxl'
     inputStream = m21.converter.parse(fileName)
-    scoreMe = melodyExtract(inputStream).makeMeasures()
-
+   # inputStream.show()
+    scoreMe = melodyExtract(inputStream)
+    scoreMe = scoreMe.makeMeasures()
+    scoreMe.show()
     outputStreamV1 = m21.stream.Stream()
     outputStreamV2 = m21.stream.Stream()
     
@@ -150,30 +159,33 @@ def main():
         # applying the data to the measure (shifting onsets)
         #newMeasure = m21.stream.Measure()
         #newMeasure.timeSignature = m21.meter.TimeSignature("4/4")
-        
+
         offset = 0
+        # for item in measure.flat:
+        #     if not isinstance(item, m21.note.Rest):
+        #         if isinstance(item, m21.note.Note) or isinstance(item, m21.chord.Chord):
+
         for item in measure:
             #print(note)
             if 'Note' in item.classSet or 'Chord' in item.classSet:
-                print("ragtiming ", item)
-                print("into measure", measureNum)
-                while ragtimeMeasureToApplyV1[offset] != "I":
+                print("ragtiming", item.name, end='')
+                print(" into measure", measureNum , end = '')
+                while offset < len(ragtimeMeasureToApplyV1) and ragtimeMeasureToApplyV1[offset] != "I":
                     offset+=1
-                    if offset > len(ragtimeMeasureToApplyV1):
-                        break
+
                 if offset > len(ragtimeMeasureToApplyV1):
                     break
     #            if isinstance(note, m21.note.Note) or isinstance(note, m21.chord.Chord):
                 #newMeasure.insert(offset, item)
                 outputStreamV1.insert((offset/4)+(measureNum*4), item)
-                print("at offset " + str((offset/4)+(measureNum*4)))
+                print(" at offset " + str((offset/4)+(measureNum*4)), "\n")
                 offset+=1
 
 #        outputStreamV1.append(newMeasure)
         measureNum+=1
         # outputStreamV2.append(newMeasure)
 
-    outputStreamV1.write("midi", fp="/Users/kw169/Desktop/"+fileName+"Rag.midi")
+    outputStreamV1.write("midi", fp="/Users/kw169/Desktop/output/"+fileName+"Rag.midi")
 
 
 if __name__ == "__main__":

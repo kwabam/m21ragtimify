@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="579ea9ce-ac19-47ff-b67e-8e9d2c5fde98" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BassGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/BassGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_DBuild.py" beforeDir="false" afterPath="$PROJECT_DIR$/_DBuild.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melody_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/melody_extract.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/m21ragtimify$BassGenerator.coverage" NAME="BassGenerator Coverage Results" MODIFIED="1545853749935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$MakeScatterPlot.coverage" NAME="MakeScatterPlot Coverage Results" MODIFIED="1529386687113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$melody_extract.coverage" NAME="melody_extract Coverage Results" MODIFIED="1545854969854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$_DBuild.coverage" NAME="_DBuild Coverage Results" MODIFIED="1539810246340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$SyncopationAnalysis.coverage" NAME="SyncopationAnalysis Coverage Results" MODIFIED="1528306242091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$2to3.coverage" NAME="2to3 Coverage Results" MODIFIED="1528248037045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Tools/scripts" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="m21ragtimify" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M21Graphing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/V1 Database_freq.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/endings_1_freq.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/endings_2_freq.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v3Database.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_V1Gen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BassGenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2754">
+              <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>isinstance</find>
+      <find>print</find>
+      <find>getCost</find>
+      <find>melodYPart</find>
+      <find>I</find>
+      <find>convertToOnsetList</find>
+      <find>countOn</find>
+      <find>item</find>
+      <find>.parse</find>
+      <find>find</find>
+      <find>err</find>
+      <find>createOn</find>
+      <find>ERROR</find>
+      <find>numOn</find>
+      <find>show</find>
+      <find>exit</find>
+      <find>instance</find>
+      <find>rec</find>
+      <find>makeM</find>
+      <find>skyline</find>
+      <find>makeMeas</find>
+      <find>join</find>
+      <find>pickle</find>
+      <find>rest</find>
+      <find>note.Rest</find>
+      <find>bass</find>
+      <find>score_</find>
+      <find>count</find>
+      <find>type=d</find>
+      <find>type = duration</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>quarterLength = duration</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../Synpy/synpy/TMC.py" />
+        <option value="$PROJECT_DIR$/paramater_setter.py" />
+        <option value="$PROJECT_DIR$/basic_functions.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/syncopation.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/__init__.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/rhythm_parser.py" />
+        <option value="$PROJECT_DIR$/../Synpy/synpy/midiparser.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/2to3.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/TMC.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/readmidi.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/midiparser.py" />
+        <option value="$PROJECT_DIR$/synpy/synpy/basic_functions.py" />
+        <option value="$PROJECT_DIR$/TMC.py" />
+        <option value="$PROJECT_DIR$/SyncopationAnalysis.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/MakeScatterPlot.py" />
+        <option value="$PROJECT_DIR$/.gitignore.txt" />
+        <option value="$PROJECT_DIR$/v1Database.json" />
+        <option value="$PROJECT_DIR$/Senna.py" />
+        <option value="$PROJECT_DIR$/_V1V2Gen.py" />
+        <option value="$PROJECT_DIR$/melody_extract.py" />
+        <option value="$PROJECT_DIR$/PRS.py" />
+        <option value="$PROJECT_DIR$/RagtimeFitter.py" />
+        <option value="$PROJECT_DIR$/_V3Gen.py" />
+        <option value="$PROJECT_DIR$/_EndingsDBuild.py" />
+        <option value="$PROJECT_DIR$/listed_directory.txt" />
+        <option value="$PROJECT_DIR$/M21Graphing.py" />
+        <option value="$PROJECT_DIR$/_DBuild.py" />
+        <option value="$PROJECT_DIR$/BassGenerator.py" />
+        <option value="$PROJECT_DIR$/_V1Gen.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1698" />
+    <option name="height" value="1068" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="m21ragtimify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="m21ragtimify" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="indent&#9;ACTION&#9;ConvertIndentsGroup&#10;noteSequence&#9;null&#9;null&#10;note_sequen&#9;null&#9;null&#10;get velocity&#9;null&#9;null&#10;get_binary_sequ&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Automated_Music_Transcription-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kw169\Desktop\m21ragtimify" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kw169\Desktop\m21ragtimify\synpy\synpy" />
+      <recent name="C:\Users\kw169\Desktop\m21ragtimify" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python._V1Gen">
+    <configuration name="BassGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="m21ragtimify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BassGenerator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="M21Graphing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="m21ragtimify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M21Graphing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_EndingsDBuild" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="m21ragtimify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_EndingsDBuild.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_V1Gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="m21ragtimify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_V1Gen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_V3Gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="m21ragtimify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_V3Gen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.BassGenerator" />
+      <item itemvalue="Python.M21Graphing" />
+      <item itemvalue="Python._EndingsDBuild" />
+      <item itemvalue="Python._V1Gen" />
+      <item itemvalue="Python._V3Gen" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python._V1Gen" />
+        <item itemvalue="Python.BassGenerator" />
+        <item itemvalue="Python.M21Graphing" />
+        <item itemvalue="Python._EndingsDBuild" />
+        <item itemvalue="Python._V3Gen" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="579ea9ce-ac19-47ff-b67e-8e9d2c5fde98" name="Default" comment="" />
+      <created>1527647435605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527647435605</updated>
+      <workItem from="1558539616040" duration="209000" />
+      <workItem from="1558539826451" duration="10092000" />
+      <workItem from="1559574829522" duration="10965000" />
+      <workItem from="1559628514379" duration="20270000" />
+      <workItem from="1559775018473" duration="3901000" />
+      <workItem from="1559874671034" duration="599000" />
+      <workItem from="1559931170053" duration="6680000" />
+      <workItem from="1560204959195" duration="156000" />
+      <workItem from="1560205297565" duration="9994000" />
+      <workItem from="1560291578993" duration="4104000" />
+      <workItem from="1560302466995" duration="2498000" />
+      <workItem from="1560364998153" duration="8553000" />
+      <workItem from="1560449940138" duration="6426000" />
+      <workItem from="1560533731024" duration="7047000" />
+      <workItem from="1560810188275" duration="1822000" />
+      <workItem from="1560823315366" duration="930000" />
+      <workItem from="1560913583640" duration="634000" />
+      <workItem from="1560978969711" duration="4105000" />
+      <workItem from="1561058979686" duration="22653000" />
+      <workItem from="1561386340082" duration="8068000" />
+      <workItem from="1561438100484" duration="1349000" />
+      <workItem from="1561488204921" duration="2497000" />
+      <workItem from="1561512789602" duration="3109000" />
+      <workItem from="1561572660396" duration="6375000" />
+      <workItem from="1561656823750" duration="1980000" />
+      <workItem from="1561745485121" duration="2858000" />
+      <workItem from="1561756378064" duration="4396000" />
+      <workItem from="1561880533030" duration="4262000" />
+      <workItem from="1561939963920" duration="761000" />
+      <workItem from="1561958925950" duration="12016000" />
+      <workItem from="1562180203580" duration="3422000" />
+      <workItem from="1562625670276" duration="2185000" />
+      <workItem from="1562770905578" duration="28671000" />
+      <workItem from="1563076945446" duration="767000" />
+      <workItem from="1563162474626" duration="7318000" />
+      <workItem from="1563389098878" duration="3689000" />
+      <workItem from="1563431156156" duration="5077000" />
+      <workItem from="1563505507152" duration="9874000" />
+      <workItem from="1563805919604" duration="11086000" />
+      <workItem from="1563995987737" duration="11163000" />
+      <workItem from="1567608970953" duration="632000" />
+    </task>
+    <task id="LOCAL-00001" summary="Cleaned up code. &#10;Moved some pieces into functions for easier readability, and used better functions where available.">
+      <created>1539067125326</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539067125326</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Renamed variables to fit naming conventions.&#10;Cleaned up _DBuild to mirror melody_extract where possible&#10;Removed some fragments of code that were no longer neccessary">
+      <created>1539133066935</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539133066935</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created Rudimentary Bass line Generator">
+      <created>1539156198344</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539156198344</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="253193000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" sideWeight="0.5005599" side_tool="true" weight="0.23471883" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4994401" visible="true" weight="0.15817694" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32909605" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.9053691" weight="0.3281075" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3281075" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.15991472" side_tool="true" weight="0.3488624" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3281075" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.84008527" visible="true" weight="0.39081746" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39977604" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" x="0" y="23" width="1536" height="801" id="SciView" order="0" sideWeight="0.9378531" weight="0.33129585" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="4" sideWeight="0.06214689" side_tool="true" weight="0.27181208" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49684212" weight="0.3294621" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" sideWeight="0.5005599" side_tool="true" weight="0.23471883" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4994401" visible="true" weight="0.15525672" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32909605" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.9053691" weight="0.3281075" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3281075" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.15991472" side_tool="true" weight="0.3488624" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.3281075" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.84008527" visible="true" weight="0.39081746" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39977604" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" x="0" y="23" width="1536" height="801" id="SciView" order="0" sideWeight="0.9378531" visible="true" weight="0.33129585" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="337" height="638" id="Documentation" order="4" sideWeight="0.06214689" side_tool="true" weight="0.27181208" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49684212" weight="0.3294621" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleaned up code. &#10;Moved some pieces into functions for easier readability, and used better functions where available." />
+    <MESSAGE value="Renamed variables to fit naming conventions.&#10;Cleaned up _DBuild to mirror melody_extract where possible&#10;Removed some fragments of code that were no longer neccessary" />
+    <MESSAGE value="Created Rudimentary Bass line Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Rudimentary Bass line Generator" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/m21ragtimify$_DBuild.coverage" NAME="_DBuild Coverage Results" MODIFIED="1561966821365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$melody_extract.coverage" NAME="melody_extract Coverage Results" MODIFIED="1561966258151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$M21Graphing.coverage" NAME="M21Graphing Coverage Results" MODIFIED="1563995518925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$BassGenerator.coverage" NAME="BassGenerator Coverage Results" MODIFIED="1564026319135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$_EndingsDBuild.coverage" NAME="_EndingsDBuild Coverage Results" MODIFIED="1563806741090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$_V3Gen.coverage" NAME="_V3Gen Coverage Results" MODIFIED="1563077055426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$Senna.coverage" NAME="Senna Coverage Results" MODIFIED="1561151266528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$PRS.coverage" NAME="PRS Coverage Results" MODIFIED="1562045638921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$_V1V2Gen.coverage" NAME="_V1V2Gen Coverage Results" MODIFIED="1561141624871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$RagtimeFitter.coverage" NAME="RagtimeFitter Coverage Results" MODIFIED="1562951137785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/m21ragtimify$_V1Gen.coverage" NAME="_V1Gen Coverage Results" MODIFIED="1564032676280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/midiparser.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/parameter_setter.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/readmidi.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/basic_functions.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/TMC.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/music_objects.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/LHL.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/synpy/synpy/syncopation.py" />
+    <entry file="file://$PROJECT_DIR$/SyncopationAnalysis.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/corpus/manager.py" />
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/corpus/__init__.py" />
+    <entry file="file://$USER_HOME$/Downloads/m21ragtimify-master/venv/Lib/site-packages/music21/corpus/corpora.py" />
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/metadata/bundles.py" />
+    <entry file="file://$PROJECT_DIR$/MakeScatterPlot.py" />
+    <entry file="file://$PROJECT_DIR$/objs.pkl" />
+    <entry file="file://$PROJECT_DIR$/syncopationSet.pkl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/meter.py" />
+    <entry file="file://$PROJECT_DIR$/.gitignore.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/pitch.py" />
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/stream/makeNotation.py" />
+    <entry file="file://$USER_HOME$/Downloads/music21-master/music21/stream/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/graph.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Automated_Music_Transcription-master/music_transcriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Path/to/virtualenv/Scripts/m21ragtimify/Lib/site-packages/music21/corpus/corpora.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="795" selection-start-line="795" selection-end-line="795" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yes.pkl" />
+    <entry file="file://C:/Path/to/virtualenv/Scripts/m21ragtimify/Lib/site-packages/music21/freezeThaw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15861">
+          <caret line="950" selection-start-line="950" selection-end-line="950" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Path/to/virtualenv/Scripts/m21ragtimify/Lib/site-packages/music21/lily/translate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="360" selection-start-line="360" selection-end-line="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Senna.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_V1V2Gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#84#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Path/to/virtualenv/Scripts/m21ragtimify/Lib/site-packages/music21/converter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="605" selection-start-line="605" selection-end-line="605" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1Database.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onset_totals.pkl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" lean-forward="true" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PRS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/melody_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="148" selection-start-line="148" selection-end-line="149" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listed_directory.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2Database.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_EndingsDBuild.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RagtimeFitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_V3Gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1_onset_data.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_DBuild.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#24#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M21Graphing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/V1 Database_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/endings_1_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/endings_2_freq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v3Database.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BassGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="165" column="5" selection-start-line="165" selection-start-column="5" selection-end-line="165" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_V1Gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#1555#2141#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

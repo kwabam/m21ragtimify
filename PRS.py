@@ -19,6 +19,7 @@ def getCost(seq, next_seq =""):
     cost *= len(seq)
     return round(cost)
 
+
 def getSubSequenceCost(measure, division_level):
     cost = 0
     if division_level == 0:
@@ -38,6 +39,7 @@ def getSubSequenceCost(measure, division_level):
             else:
                 cost += getCost(measure[i * 2: (i + 1) * 2], measure[(i + 1) * 2])
     return cost
+
 
 def getSyncopationLevel(measure):
     sum_costs = 0
